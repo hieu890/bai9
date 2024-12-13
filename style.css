@@ -1,0 +1,52 @@
+/* General body and reset */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  /* Flag container */
+  .flag {
+    width: 900px;
+    height: 600px;
+    position: relative;
+    background-color: #D81B60; /* Red color for top and bottom stripes */
+  }
+  
+  /* The middle blue stripe */
+  .flag > div {
+    width: 100%;
+    height: 200px;
+    background-color: #1565C0; /* Blue color */
+    position: absolute;
+    top: 200px; /* Place the blue stripe in the center */
+  }
+  
+  /* Circle in the middle of the blue stripe */
+  .flag > div > div {
+    width: 200px;
+    height: 200px;
+    background-color: white; /* White color */
+    border-radius: 50%; /* Make the shape a circle */
+    position: absolute;
+    top: 0; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%);
+  }
+  
+  /* Centered text inside the flag */
+  .flag p {
+    text-align: center;
+    font-size: 36px;
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+  }
+  
+  .flag > div p {
+    font-size: 28px;
+  }
+
